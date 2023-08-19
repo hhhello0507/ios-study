@@ -15,6 +15,7 @@
 		4D6AC5A82A8F8109001F5226 /* b1nd_iOS_requestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AC5A72A8F8109001F5226 /* b1nd_iOS_requestUITests.swift */; };
 		4D6AC5AA2A8F8109001F5226 /* b1nd_iOS_requestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AC5A92A8F8109001F5226 /* b1nd_iOS_requestUITestsLaunchTests.swift */; };
 		4D6AC5BB2A8F8F5E001F5226 /* ColorExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AC5BA2A8F8F5E001F5226 /* ColorExtentsion.swift */; };
+		4DB3EC442A90668F00D077BB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3EC432A90668F00D077BB /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4D6AC5A72A8F8109001F5226 /* b1nd_iOS_requestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b1nd_iOS_requestUITests.swift; sourceTree = "<group>"; };
 		4D6AC5A92A8F8109001F5226 /* b1nd_iOS_requestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b1nd_iOS_requestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D6AC5BA2A8F8F5E001F5226 /* ColorExtentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtentsion.swift; sourceTree = "<group>"; };
+		4DB3EC432A90668F00D077BB /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				4D6AC58C2A8F8108001F5226 /* b1nd_iOS_requestApp.swift */,
 				4D6AC58E2A8F8108001F5226 /* ContentView.swift */,
+				4DB3EC432A90668F00D077BB /* App.swift */,
 				4D6AC5BA2A8F8F5E001F5226 /* ColorExtentsion.swift */,
 				4D6AC5902A8F8109001F5226 /* Assets.xcassets */,
 				4D6AC5922A8F8109001F5226 /* Preview Content */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6AC58F2A8F8108001F5226 /* ContentView.swift in Sources */,
+				4DB3EC442A90668F00D077BB /* App.swift in Sources */,
 				4D6AC58D2A8F8108001F5226 /* b1nd_iOS_requestApp.swift in Sources */,
 				4D6AC5BB2A8F8F5E001F5226 /* ColorExtentsion.swift in Sources */,
 			);

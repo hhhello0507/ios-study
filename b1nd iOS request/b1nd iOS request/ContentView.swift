@@ -14,7 +14,7 @@ struct OnBoardView: View {
     @State var pw: String = ""
     @State var showAlert: Bool = false
     @State var alertMsg: String = ""
-    @State var isJoin = false
+    @Binding var isJoin: Bool
     
     var body: some View {
         NavigationView {
@@ -34,7 +34,7 @@ struct OnBoardView: View {
                         .frame(height: 20)
                     B1ndButton(text: "로그인") {
                         if isValid() {
-//                            MainScreen()
+                            isJoin = true
                         }
                     }
                     AuthDetail()
@@ -386,6 +386,7 @@ struct DiaryScreen: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -404,7 +405,7 @@ struct AddButton: View {
                         .foregroundColor(.blue)
                         .clipShape(Circle())
                 }
-        }
+            }
     }
 }
 
@@ -548,6 +549,6 @@ struct MoreDetailView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryScreen()
+        B1ndApp()
     }
 }

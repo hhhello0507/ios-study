@@ -11,7 +11,7 @@ import SwiftUI
 struct b1nd_iOS_requestApp: App {
     var body: some Scene {
         WindowGroup {
-            OnBoardView()
+            B1ndApp()
         }
     }
 }
