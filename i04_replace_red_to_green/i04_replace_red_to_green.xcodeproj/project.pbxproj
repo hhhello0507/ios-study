@@ -15,6 +15,8 @@
 		4D2997652A979CCA0098D06E /* i04_replace_red_to_greenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2997642A979CCA0098D06E /* i04_replace_red_to_greenUITests.swift */; };
 		4D2997672A979CCA0098D06E /* i04_replace_red_to_greenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2997662A979CCA0098D06E /* i04_replace_red_to_greenUITestsLaunchTests.swift */; };
 		4D2997742A979E3A0098D06E /* CamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2997732A979E3A0098D06E /* CamViewModel.swift */; };
+		4D2997762A97A2730098D06E /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2997752A97A2730098D06E /* CameraPreviewView.swift */; };
+		4D2997782A97A31D0098D06E /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2997772A97A31D0098D06E /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		4D2997642A979CCA0098D06E /* i04_replace_red_to_greenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i04_replace_red_to_greenUITests.swift; sourceTree = "<group>"; };
 		4D2997662A979CCA0098D06E /* i04_replace_red_to_greenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i04_replace_red_to_greenUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D2997732A979E3A0098D06E /* CamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewModel.swift; sourceTree = "<group>"; };
+		4D2997752A97A2730098D06E /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		4D2997772A97A31D0098D06E /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		4D2997792A97A42D0098D06E /* i04-replace-red-to-green-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "i04-replace-red-to-green-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +101,14 @@
 		4D2997482A979CC90098D06E /* i04_replace_red_to_green */ = {
 			isa = PBXGroup;
 			children = (
+				4D2997792A97A42D0098D06E /* i04-replace-red-to-green-Info.plist */,
 				4D2997492A979CC90098D06E /* i04_replace_red_to_greenApp.swift */,
 				4D29974B2A979CC90098D06E /* CamView.swift */,
 				4D29974D2A979CCA0098D06E /* Assets.xcassets */,
 				4D29974F2A979CCA0098D06E /* Preview Content */,
 				4D2997732A979E3A0098D06E /* CamViewModel.swift */,
+				4D2997752A97A2730098D06E /* CameraPreviewView.swift */,
+				4D2997772A97A31D0098D06E /* Camera.swift */,
 			);
 			path = i04_replace_red_to_green;
 			sourceTree = "<group>";
@@ -260,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2997762A97A2730098D06E /* CameraPreviewView.swift in Sources */,
+				4D2997782A97A31D0098D06E /* Camera.swift in Sources */,
 				4D2997742A979E3A0098D06E /* CamViewModel.swift in Sources */,
 				4D29974C2A979CC90098D06E /* CamView.swift in Sources */,
 				4D29974A2A979CC90098D06E /* i04_replace_red_to_greenApp.swift in Sources */,
@@ -423,6 +433,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"i04_replace_red_to_green/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "i04-replace-red-to-green-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "히히";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이히히";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +464,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"i04_replace_red_to_green/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "i04-replace-red-to-green-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "히히";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이히히";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

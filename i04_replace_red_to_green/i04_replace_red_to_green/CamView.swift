@@ -11,15 +11,17 @@ struct CamView: View {
     @ObservedObject var viewModel = CamViewModel()
     var body: some View {
         ZStack {
+            viewModel.cameraPreview.ignoresSafeArea()
+            .onAppear {
+                viewModel.configure()
+            }
             VStack {
                 HStack {
-                    // 셔터사운드 온오프
                     Shutter(onClickShutter: {
                         viewModel.switchFlash()
                     }, isFlashOn: viewModel.isFlashOn)
                     .padding(.horizontal, 30)
                     
-                    // 플래시 온오프
                     Silent(onClickSilent: {
                         viewModel.switchSilent()
                     }, isSilentOn: viewModel.isSilentModeOn)
