@@ -276,7 +276,7 @@ struct FindPwScreen: View {
             .frame(width: geo.size.width, height: geo.size.height)
             .background(backgroundColor)
             .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading: BackButton(text: "회원가입"))
+            .navigationBarItems(leading: BackButton(text: "비밀번호 찾기"))
             .alert(isPresented: $showAlert) {
                 Alert(title: Text(alertMsg), dismissButton: .default(Text("확인")))
             }

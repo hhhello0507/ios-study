@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
- 
+
+// by gpt
 extension Color {
   init(hex: String) {
     let scanner = Scanner(string: hex)
