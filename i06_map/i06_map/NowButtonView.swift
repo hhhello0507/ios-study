@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct NowButtonView: View {
+    let isFocus: Bool
     var body: some View {
         Button(action: {
             print("test")
         }) {
-            Image("")
+            Image(getImage())
+                .resizable()
+                .frame(width: 60, height: 60)
         }
+        .shadow(radius: 2)
+    }
+    
+    func getImage() -> String {
+        if isFocus {
+            return "focus"
+        } else {
+            return "no_focus"
+        }
+    }
+}
+
+struct NowButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        NowButtonView(isFocus: true)
     }
 }

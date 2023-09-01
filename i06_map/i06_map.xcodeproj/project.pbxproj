@@ -18,6 +18,10 @@
 		4DC06ABE2AA09A6A000CD565 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06ABD2AA09A6A000CD565 /* TopBarView.swift */; };
 		4DC06AC02AA09A96000CD565 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06ABF2AA09A96000CD565 /* SearchView.swift */; };
 		4DC06AC22AA0DA36000CD565 /* NowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC12AA0DA36000CD565 /* NowButtonView.swift */; };
+		4DC06AC42AA17A54000CD565 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC32AA17A54000CD565 /* FindView.swift */; };
+		4DC06AC62AA17B72000CD565 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC52AA17B72000CD565 /* CommunityView.swift */; };
+		4DC06AC82AA17FDC000CD565 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC72AA17FDC000CD565 /* BoardView.swift */; };
+		4DC06ACE2AA190C0000CD565 /* BoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		4DC06ABD2AA09A6A000CD565 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		4DC06ABF2AA09A96000CD565 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4DC06AC12AA0DA36000CD565 /* NowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowButtonView.swift; sourceTree = "<group>"; };
+		4DC06AC32AA17A54000CD565 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		4DC06AC52AA17B72000CD565 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		4DC06AC72AA17FDC000CD565 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +112,12 @@
 			children = (
 				4DC06A912AA05C4E000CD565 /* i06_mapApp.swift */,
 				4DC06A932AA05C4E000CD565 /* ContentView.swift */,
+				4DC06AC32AA17A54000CD565 /* FindView.swift */,
 				4DC06AC12AA0DA36000CD565 /* NowButtonView.swift */,
 				4DC06ABD2AA09A6A000CD565 /* TopBarView.swift */,
+				4DC06AC52AA17B72000CD565 /* CommunityView.swift */,
+				4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */,
+				4DC06AC72AA17FDC000CD565 /* BoardView.swift */,
 				4DC06ABF2AA09A96000CD565 /* SearchView.swift */,
 				4DC06ABB2AA09A32000CD565 /* MapView.swift */,
 				4DC06A952AA05C4F000CD565 /* Assets.xcassets */,
@@ -270,10 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC06AC02AA09A96000CD565 /* SearchView.swift in Sources */,
+				4DC06AC42AA17A54000CD565 /* FindView.swift in Sources */,
 				4DC06A942AA05C4E000CD565 /* ContentView.swift in Sources */,
+				4DC06ACE2AA190C0000CD565 /* BoardDetail.swift in Sources */,
 				4DC06AC22AA0DA36000CD565 /* NowButtonView.swift in Sources */,
 				4DC06ABC2AA09A32000CD565 /* MapView.swift in Sources */,
 				4DC06ABE2AA09A6A000CD565 /* TopBarView.swift in Sources */,
+				4DC06AC82AA17FDC000CD565 /* BoardView.swift in Sources */,
+				4DC06AC62AA17B72000CD565 /* CommunityView.swift in Sources */,
 				4DC06A922AA05C4E000CD565 /* i06_mapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

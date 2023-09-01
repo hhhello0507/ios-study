@@ -7,19 +7,25 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
     
     var body: some View {
-        ZStack {
-            MapView()
-            TopBarView()
-                .zIndex(1)
-                .padding()
+        TabView {
+            Group {
+                FindView()
+                    .tabItem {
+                        Label("탐색", systemImage: "location.circle.fill")
+                    }
+                CommunityView()
+                    .tabItem {
+                        Label("커뮤니티", systemImage: "ellipsis.message.fill")
+                    }
+                    .badge("!")
+            }
+            .toolbarBackground(.visible, for: .tabBar)
         }
     }
 }
-
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -27,4 +33,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

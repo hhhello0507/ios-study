@@ -16,6 +16,7 @@ struct TopBarView: View {
             }
             Spacer()
         }
+        .shadow(radius: 2)
     }
 }
 
