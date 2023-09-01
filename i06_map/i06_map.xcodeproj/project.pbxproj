@@ -26,6 +26,7 @@
 		4DC06AD32AA1D210000CD565 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD22AA1D210000CD565 /* Constant.swift */; };
 		4DC06AD52AA1D2FC000CD565 /* BoardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */; };
 		4DC06AD72AA1D362000CD565 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD62AA1D362000CD565 /* HttpClient.swift */; };
+		4DC06AD92AA1E295000CD565 /* NewBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD82AA1E295000CD565 /* NewBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4DC06AD22AA1D210000CD565 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardResponse.swift; sourceTree = "<group>"; };
 		4DC06AD62AA1D362000CD565 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		4DC06AD82AA1E295000CD565 /* NewBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +125,13 @@
 				4DC06A912AA05C4E000CD565 /* i06_mapApp.swift */,
 				4DC06A932AA05C4E000CD565 /* ContentView.swift */,
 				4DC06AD22AA1D210000CD565 /* Constant.swift */,
+				4DC06AC52AA17B72000CD565 /* CommunityView.swift */,
+				4DC06AD82AA1E295000CD565 /* NewBoardView.swift */,
 				4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */,
 				4DC06AD62AA1D362000CD565 /* HttpClient.swift */,
 				4DC06AC32AA17A54000CD565 /* FindView.swift */,
 				4DC06AC12AA0DA36000CD565 /* NowButtonView.swift */,
 				4DC06ABD2AA09A6A000CD565 /* TopBarView.swift */,
-				4DC06AC52AA17B72000CD565 /* CommunityView.swift */,
 				4DC06ACF2AA191D6000CD565 /* PostButtonView.swift */,
 				4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */,
 				4DC06AC72AA17FDC000CD565 /* BoardView.swift */,
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC06AD92AA1E295000CD565 /* NewBoardView.swift in Sources */,
 				4DC06AC02AA09A96000CD565 /* SearchView.swift in Sources */,
 				4DC06AD52AA1D2FC000CD565 /* BoardResponse.swift in Sources */,
 				4DC06AC42AA17A54000CD565 /* FindView.swift in Sources */,

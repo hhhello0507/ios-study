@@ -9,25 +9,34 @@ import SwiftUI
 
 struct CommunityView: View {
     @State var arr = [("ㅎㅇ", "1분 전"), ("제갈제갈제갈", "1분 전"), ("ㅋㅋㅋ", "1분 전")]
+    @State private var isDetailViewActive = false
     var body: some View {
-        ZStack {
-            ScrollView {
-                ForEach(0 ..< 3, id: \.self) {i in
-                    BoardView(titleText: arr[i].0, createdTime: arr[i].1) {
-                        
+        ZStack{}
+        .ignoresSafeArea()
+        .safeAreaInset(edge: .top) {
+            ScrollView(.vertical) {
+                VStack {
+                    ForEach(0 ..< 3, id: \.self) {i in
+                        BoardView(titleText: arr[i].0, createdTime: arr[i].1) {
+                            
+                        }
                     }
                 }
             }
-            
-            HStack {
-                Spacer()
-                VStack {
-                    Spacer()
-                    PostButtonView {
-                        
+            NavigationView {
+                NavigationLink(destination: NewBoardView(), isActive: $isDetailViewActive) {
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Spacer()
+                            PostButtonView {
+                                isDetailViewActive = true
+                            }
+                        }
+                        .padding()
                     }
                 }
-                .padding()
+                
             }
         }
     }
