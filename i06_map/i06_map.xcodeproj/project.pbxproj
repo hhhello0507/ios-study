@@ -22,6 +22,10 @@
 		4DC06AC62AA17B72000CD565 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC52AA17B72000CD565 /* CommunityView.swift */; };
 		4DC06AC82AA17FDC000CD565 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AC72AA17FDC000CD565 /* BoardView.swift */; };
 		4DC06ACE2AA190C0000CD565 /* BoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */; };
+		4DC06AD02AA191D6000CD565 /* PostButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06ACF2AA191D6000CD565 /* PostButtonView.swift */; };
+		4DC06AD32AA1D210000CD565 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD22AA1D210000CD565 /* Constant.swift */; };
+		4DC06AD52AA1D2FC000CD565 /* BoardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */; };
+		4DC06AD72AA1D362000CD565 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06AD62AA1D362000CD565 /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,11 @@
 		4DC06AC52AA17B72000CD565 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		4DC06AC72AA17FDC000CD565 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetail.swift; sourceTree = "<group>"; };
+		4DC06ACF2AA191D6000CD565 /* PostButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButtonView.swift; sourceTree = "<group>"; };
+		4DC06AD12AA1D1CE000CD565 /* i06-map-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "i06-map-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4DC06AD22AA1D210000CD565 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardResponse.swift; sourceTree = "<group>"; };
+		4DC06AD62AA1D362000CD565 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +119,17 @@
 		4DC06A902AA05C4E000CD565 /* i06_map */ = {
 			isa = PBXGroup;
 			children = (
+				4DC06AD12AA1D1CE000CD565 /* i06-map-Info.plist */,
 				4DC06A912AA05C4E000CD565 /* i06_mapApp.swift */,
 				4DC06A932AA05C4E000CD565 /* ContentView.swift */,
+				4DC06AD22AA1D210000CD565 /* Constant.swift */,
+				4DC06AD42AA1D2FC000CD565 /* BoardResponse.swift */,
+				4DC06AD62AA1D362000CD565 /* HttpClient.swift */,
 				4DC06AC32AA17A54000CD565 /* FindView.swift */,
 				4DC06AC12AA0DA36000CD565 /* NowButtonView.swift */,
 				4DC06ABD2AA09A6A000CD565 /* TopBarView.swift */,
 				4DC06AC52AA17B72000CD565 /* CommunityView.swift */,
+				4DC06ACF2AA191D6000CD565 /* PostButtonView.swift */,
 				4DC06ACD2AA190C0000CD565 /* BoardDetail.swift */,
 				4DC06AC72AA17FDC000CD565 /* BoardView.swift */,
 				4DC06ABF2AA09A96000CD565 /* SearchView.swift */,
@@ -282,8 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC06AC02AA09A96000CD565 /* SearchView.swift in Sources */,
+				4DC06AD52AA1D2FC000CD565 /* BoardResponse.swift in Sources */,
 				4DC06AC42AA17A54000CD565 /* FindView.swift in Sources */,
 				4DC06A942AA05C4E000CD565 /* ContentView.swift in Sources */,
+				4DC06AD72AA1D362000CD565 /* HttpClient.swift in Sources */,
 				4DC06ACE2AA190C0000CD565 /* BoardDetail.swift in Sources */,
 				4DC06AC22AA0DA36000CD565 /* NowButtonView.swift in Sources */,
 				4DC06ABC2AA09A32000CD565 /* MapView.swift in Sources */,
@@ -291,6 +307,8 @@
 				4DC06AC82AA17FDC000CD565 /* BoardView.swift in Sources */,
 				4DC06AC62AA17B72000CD565 /* CommunityView.swift in Sources */,
 				4DC06A922AA05C4E000CD565 /* i06_mapApp.swift in Sources */,
+				4DC06AD02AA191D6000CD565 /* PostButtonView.swift in Sources */,
+				4DC06AD32AA1D210000CD565 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +469,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"i06_map/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "i06-map-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +498,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"i06_map/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "i06-map-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

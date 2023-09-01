@@ -19,8 +19,16 @@ struct CommunityView: View {
                 }
             }
             
-            // todo
-            
+            HStack {
+                Spacer()
+                VStack {
+                    Spacer()
+                    PostButtonView {
+                        
+                    }
+                }
+                .padding()
+            }
         }
     }
 }
