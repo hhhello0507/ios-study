@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Constant {
-    static let BASE_URL = "http://127.0.0.1:8080"
+    static let BASE_URL = "http://10.80.163.12:4000"
 }
 
 extension URL {

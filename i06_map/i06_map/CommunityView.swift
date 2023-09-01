@@ -6,34 +6,31 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CommunityView: View {
     @State private var isDetailViewActive = false
-    @State var i = 0
     @State var isInit = false
-    @ObservedObject private var vm: CommunityViewModel
+    @ObservedObject private var vm = CommunityViewModel()
     
     init() {
-        _vm = ObservedObject(initialValue: CommunityViewModel())
-        vm.initBoardList()
-        print(i)
-        i += 1
+        self.vm.initBoardList()
     }
     
     var body: some View {
         ZStack{}
         .ignoresSafeArea()
         .safeAreaInset(edge: .top) {
-            ScrollView(.vertical) {
-                VStack {
-                    ForEach(vm.boardList ?? [], id: \.self) {board in
-                        BoardView(titleText: board.title, createdTime: board.content) {
-                            
+            NavigationView {
+                ScrollView(.vertical) {
+                    VStack {
+                        ForEach(vm.boardList ?? [], id: \.self) { board in
+                            BoardView(titleText: board.title, createdTime: board.content) {
+    
+                            }
                         }
                     }
                 }
-            }
-            NavigationView {
                 NavigationLink(destination: NewBoardView(), isActive: $isDetailViewActive) {
                     HStack {
                         Spacer()
@@ -56,6 +53,7 @@ extension CommunityView {
     class CommunityViewModel: ObservableObject {
         @Published var boardList: [BoardModel]?
         var httpClient = HttpClient()
+        private var cancellables = Set<AnyCancellable>()
         
         init(boardList: [BoardModel]? = nil) {
             self.boardList = boardList
@@ -67,6 +65,7 @@ extension CommunityView {
                 case .success(let boardList):
                     DispatchQueue.main.async {
                         self.boardList = boardList
+                        print(boardList)
                     }
                 case .failure(let error):
                     print(error.localizedDescription)

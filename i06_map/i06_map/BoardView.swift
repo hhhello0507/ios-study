@@ -11,6 +11,7 @@ struct BoardView: View {
     let titleText: String
     let createdTime: String
     let callback: () -> Void
+    
     var body: some View {
         Button(action: {
             callback()
