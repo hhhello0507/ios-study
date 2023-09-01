@@ -1,0 +1,14 @@
+//
+//  NetWorkEnum.swift
+//  i06_map
+//
+//  Created by dgsw8th71 on 2023/09/01.
+//
+
+import Foundation
+
+enum NetWorkError: Error {
+    case BadUrl
+    case NoData
+    case DecodingError
+}

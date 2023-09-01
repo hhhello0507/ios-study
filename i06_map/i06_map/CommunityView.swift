@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct CommunityView: View {
-    @State var arr = [("ㅎㅇ", "1분 전"), ("제갈제갈제갈", "1분 전"), ("ㅋㅋㅋ", "1분 전")]
     @State private var isDetailViewActive = false
+    @State var i = 0
+    @State var isInit = false
+    @ObservedObject private var vm: CommunityViewModel
+    
+    init() {
+        _vm = ObservedObject(initialValue: CommunityViewModel())
+        vm.initBoardList()
+        print(i)
+        i += 1
+    }
+    
     var body: some View {
         ZStack{}
         .ignoresSafeArea()
         .safeAreaInset(edge: .top) {
             ScrollView(.vertical) {
                 VStack {
-                    ForEach(0 ..< 3, id: \.self) {i in
-                        BoardView(titleText: arr[i].0, createdTime: arr[i].1) {
+                    ForEach(vm.boardList ?? [], id: \.self) {board in
+                        BoardView(titleText: board.title, createdTime: board.content) {
                             
                         }
                     }
@@ -37,6 +47,30 @@ struct CommunityView: View {
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+extension CommunityView {
+    class CommunityViewModel: ObservableObject {
+        @Published var boardList: [BoardModel]?
+        var httpClient = HttpClient()
+        
+        init(boardList: [BoardModel]? = nil) {
+            self.boardList = boardList
+        }
+        
+        func initBoardList() {
+            httpClient.getBoardList { result in
+                switch result {
+                case .success(let boardList):
+                    DispatchQueue.main.async {
+                        self.boardList = boardList
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
             }
         }
     }

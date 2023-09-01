@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BoardResponse {
+struct BoardModel: Decodable, Hashable {
     let id: Int
     let title: String
     let content: String

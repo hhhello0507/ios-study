@@ -15,4 +15,8 @@ extension URL {
     static func getBoardList() -> URL? {
         return URL(string: "\(Constant.BASE_URL)/boards")
     }
+    
+    static func uploadBoard() -> URL? {
+        return URL(string: "\(Constant.BASE_URL)/board")
+    }
 }
