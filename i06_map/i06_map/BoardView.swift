@@ -13,9 +13,7 @@ struct BoardView: View {
     let callback: () -> Void
     
     var body: some View {
-        Button(action: {
-            callback()
-        }) {
+        Button(action: callback) {
             HStack {
                 Text(titleText)
                     .font(.title3)

@@ -8,7 +8,8 @@
 import Foundation
 
 enum NetWorkError: Error {
-    case BadUrl
-    case NoData
-    case DecodingError
+    case badUrl
+    case noData
+    case decodingError
 }
+

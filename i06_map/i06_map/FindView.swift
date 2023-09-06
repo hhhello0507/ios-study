@@ -13,21 +13,21 @@ struct FindView: View {
     
     var body: some View {
         MapView()
-        .ignoresSafeArea()
-        .safeAreaInset(edge: .top) {
-            ZStack {
-                TopBarView()
-                    .padding()
-                HStack {
-                    Spacer()
-                    VStack {
+            .ignoresSafeArea()
+            .safeAreaInset(edge: .top) {
+                ZStack {
+                    TopBarView()
+                        .padding()
+                    HStack {
                         Spacer()
-                        NowButtonView(isFocus: false)
+                        VStack {
+                            Spacer()
+                            NowButtonView(isFocus: false)
+                        }
+                        .padding()
                     }
-                    .padding()
                 }
             }
-        }
     }
 }
 

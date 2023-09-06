@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-let backgroundColor = Color(hex: "F8F8F8")
+extension Color {
+    static let backgroundColor = Color(hex: "F8F8F8")
+}
 
 struct OnBoardView: View {
     @State var name: String = ""
@@ -40,7 +42,7 @@ struct OnBoardView: View {
                     AuthDetail()
                 }
                 .frame(width: geo.size.width, height: geo.size.height)
-                .background(backgroundColor)
+                .background(Color.backgroundColor)
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text(alertMsg), dismissButton: .default(Text("확인")))
                 }
