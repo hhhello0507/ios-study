@@ -18,14 +18,17 @@ struct ListView: View {
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(5)
-                
             }
             HStack {
                 VStack {
                     Text(title)
                         .font(.title3)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.black)
                     Text(content)
                         .font(.caption)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.gray)
                 }
                 Spacer()
             }

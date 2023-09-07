@@ -13,16 +13,21 @@ struct NewsView: View {
     var body: some View {
         ZStack {
             if vm.isLoading {
-                Text("로딩중...")
+                Text("loading...")
             }
             VStack {
                 Spacer().frame(height: 1)
                 ScrollView {
                     VStack {
                         ForEach(vm.news ?? [], id: \.self) { i in
-                            ListView(title: i.title, content: i.content.substring(from: 0, to: 100) + "...", image: i.thum_url)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
+                            NavigationLink(value: i.news_url) {
+                                ListView(title: i.title, content: i.content.substring(from: 0, to: 100) + "...", image: i.thum_url)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 5)
+                            }
+                            .navigationDestination(for: String.self) { string in
+                                NewsDetialView(url: string)
+                            }
                         }
                     }
                 }

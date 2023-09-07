@@ -19,6 +19,9 @@
 		4DB0581C2AA89FB50026F1D8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0581B2AA89FB50026F1D8 /* NewsView.swift */; };
 		4DB0581E2AA8A7D20026F1D8 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0581D2AA8A7D20026F1D8 /* NewsViewModel.swift */; };
 		4DB058252AA8C40D0026F1D8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB058242AA8C40D0026F1D8 /* NewsModel.swift */; };
+		4DB058282AA9934B0026F1D8 /* NewsDetialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB058272AA9934B0026F1D8 /* NewsDetialView.swift */; };
+		4DB0582A2AA9944A0026F1D8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB058292AA9944A0026F1D8 /* WebView.swift */; };
+		4DB0582C2AA99EDD0026F1D8 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0582B2AA99EDD0026F1D8 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		4DB0581D2AA8A7D20026F1D8 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		4DB058242AA8C40D0026F1D8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		4DB058262AA8C6460026F1D8 /* i07-newwws-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "i07-newwws-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4DB058272AA9934B0026F1D8 /* NewsDetialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetialView.swift; sourceTree = "<group>"; };
+		4DB058292AA9944A0026F1D8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4DB0582B2AA99EDD0026F1D8 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +111,10 @@
 		4DB057E62AA624E80026F1D8 /* i07_newwws */ = {
 			isa = PBXGroup;
 			children = (
+				4DB0582D2AA9A30C0026F1D8 /* data */,
 				4DB058262AA8C6460026F1D8 /* i07-newwws-Info.plist */,
 				4DB058112AA625290026F1D8 /* presentation */,
 				4DB057E72AA624E80026F1D8 /* i07_newwwsApp.swift */,
-				4DB057E92AA624E80026F1D8 /* ContentView.swift */,
-				4DB0581B2AA89FB50026F1D8 /* NewsView.swift */,
-				4DB0581D2AA8A7D20026F1D8 /* NewsViewModel.swift */,
-				4DB058242AA8C40D0026F1D8 /* NewsModel.swift */,
-				4DB058192AA894B80026F1D8 /* ListView.swift */,
 				4DB057EB2AA624E90026F1D8 /* Assets.xcassets */,
 				4DB057ED2AA624E90026F1D8 /* Preview Content */,
 			);
@@ -147,8 +149,23 @@
 		4DB058112AA625290026F1D8 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4DB057E92AA624E80026F1D8 /* ContentView.swift */,
+				4DB0582B2AA99EDD0026F1D8 /* WeatherView.swift */,
+				4DB0581B2AA89FB50026F1D8 /* NewsView.swift */,
+				4DB058272AA9934B0026F1D8 /* NewsDetialView.swift */,
+				4DB058292AA9944A0026F1D8 /* WebView.swift */,
+				4DB0581D2AA8A7D20026F1D8 /* NewsViewModel.swift */,
+				4DB058242AA8C40D0026F1D8 /* NewsModel.swift */,
+				4DB058192AA894B80026F1D8 /* ListView.swift */,
 			);
 			path = presentation;
+			sourceTree = "<group>";
+		};
+		4DB0582D2AA9A30C0026F1D8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +305,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB058252AA8C40D0026F1D8 /* NewsModel.swift in Sources */,
+				4DB0582A2AA9944A0026F1D8 /* WebView.swift in Sources */,
+				4DB058282AA9934B0026F1D8 /* NewsDetialView.swift in Sources */,
 				4DB057EA2AA624E80026F1D8 /* ContentView.swift in Sources */,
 				4DB0581C2AA89FB50026F1D8 /* NewsView.swift in Sources */,
 				4DB0581E2AA8A7D20026F1D8 /* NewsViewModel.swift in Sources */,
+				4DB0582C2AA99EDD0026F1D8 /* WeatherView.swift in Sources */,
 				4DB057E82AA624E80026F1D8 /* i07_newwwsApp.swift in Sources */,
 				4DB0581A2AA894B80026F1D8 /* ListView.swift in Sources */,
 			);
