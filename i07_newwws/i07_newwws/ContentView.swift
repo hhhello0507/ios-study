@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             NewsView()
+                .navigationTitle("뉴스!")
         }
+        
     }
 }
 

@@ -8,20 +8,40 @@
 import SwiftUI
 
 struct NewsView: View {
+    @ObservedObject var vm: NewsViewModel = NewsViewModel()
+    
     var body: some View {
-        VStack {
-            Spacer().frame(height: 1)
-            ScrollView {
-                VStack {
-                    ForEach(0 ..< 10, id: \.self) { i in
-                        ListView(title: String(i), content: String(i), image: "blah")
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 5)
+        ZStack {
+            if vm.isLoading {
+                Text("로딩중...")
+            }
+            VStack {
+                Spacer().frame(height: 1)
+                ScrollView {
+                    VStack {
+                        ForEach(vm.news ?? [], id: \.self) { i in
+                            ListView(title: i.title, content: i.content.substring(from: 0, to: 100) + "...", image: i.thum_url)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 5)
+                        }
                     }
                 }
+                .frame(maxWidth: .infinity)
+                Spacer().frame(height: 1)
             }
-            .frame(maxWidth: .infinity)
-            Spacer().frame(height: 1)
         }
+        
+    }
+}
+
+extension String {
+    func substring(from: Int, to: Int) -> String {
+        guard from < count, to >= 0, to - from >= 0 else {
+            return ""
+        }
+        
+        let startIndex = index(self.startIndex, offsetBy: from)
+        let endIndex = index(self.startIndex, offsetBy: to + 1) // '+1'이 있는 이유:
+        return String(self[startIndex ..< endIndex])
     }
 }
