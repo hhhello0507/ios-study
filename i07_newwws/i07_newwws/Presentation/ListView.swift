@@ -13,14 +13,17 @@ struct ListView: View {
     let image: String
     var body: some View {
         VStack {
-            if let url = URL(string: image), let imageData = try? Data(contentsOf: url), let uiImage = UIImage(data: imageData) {
-                Image(uiImage: uiImage)
+            AsyncImage(url: URL(string: image)) { image in
+                image
                     .resizable()
-                    .scaledToFit()
+            } placeholder: {
+                Color.gray
                     .cornerRadius(5)
             }
+            .aspectRatio(16/9, contentMode: .fill)
+            .cornerRadius(5)
             HStack {
-                VStack {
+                VStack(alignment: .leading) {
                     Text(title)
                         .font(.title3)
                         .multilineTextAlignment(.leading)
@@ -36,7 +39,7 @@ struct ListView: View {
         }
         .padding(5)
         .frame(maxWidth: .infinity)
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(.white)
         .cornerRadius(10)
     }
 }

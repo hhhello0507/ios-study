@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewsView: View {
-    @ObservedObject var vm: NewsViewModel = NewsViewModel()
+    @StateObject var vm: NewsViewModel = NewsViewModel()
     
     var body: some View {
         ZStack {
@@ -35,6 +35,7 @@ struct NewsView: View {
                 Spacer().frame(height: 1)
             }
         }
+        .background(Color(.secondarySystemBackground))
         
     }
 }
