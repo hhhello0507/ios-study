@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     @State private var selectedTab = 0
@@ -13,7 +14,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             TabView(selection: $selectedTab) {
-                NewsView()
+                NewsView(st: Store(initialState: NewsFeature.State()) {
+                    NewsFeature()
+                })
                     .tabItem {
                         Label("뉴스", systemImage: "newspaper.fill")
                     }

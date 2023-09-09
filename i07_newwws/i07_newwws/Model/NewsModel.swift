@@ -11,13 +11,15 @@ struct NewsModel: Codable, Hashable {
     let numOfRows: Int
     let pageNo: Int
     let totalCount: Int
-    let items: [NewsModeldeldel]
+    let items: NewsListModel
 }
 
-struct NewsModeldeldel: Codable, Hashable {
+struct NewsItemModel: Codable, Hashable {
     let title: String
     let content: String
     let news_url: String
     let thum_url: String
     let broadcast_date: String
 }
+
+typealias NewsListModel = [NewsItemModel]

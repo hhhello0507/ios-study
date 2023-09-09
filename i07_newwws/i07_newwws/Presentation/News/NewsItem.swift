@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct NewsItemView: View {
     let title: String
     let content: String
     let image: String
@@ -47,6 +47,6 @@ struct ListView: View {
 
 struct ListView_Preview: PreviewProvider {
     static var previews: some View {
-        ListView(title: "test", content: "test", image: "blah")
+        NewsItemView(title: "test", content: "test", image: "blah")
     }
 }
