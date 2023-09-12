@@ -29,6 +29,8 @@ class BaseRemote<API: Gong0Api> {
     public func request(_ api: API) -> Future<Response, Error> {
         requestPublisher(api)
     }
+    
+    
     private func requestPublisher(_ api: API) -> Future<Response, Error> {
         return self.defaultRequest(api)
      }
