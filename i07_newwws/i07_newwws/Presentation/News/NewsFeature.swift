@@ -37,14 +37,15 @@ class NewsFeature: BaseFeature, ReducerProtocol {
             state.isLoading = false
             return .none
         case .start:
-            newsRepository.fetchNewsAll()
-                .sink(receiveCompletion: { i in
-                    print(i)
-                }, receiveValue: { i in
-//                    a.newsList = i.items
-                    print(i.items[0].content)
-                })
             return .none
+//            return .init(value: Action.newNewsList(newsRepository.fetchNewsAll()
+//                .map{ $0.items }
+//                .eraseToEffect()))
+//            return Just(.start)
+//                .eraseToEffect()
+//            return newsRepository.fetchNewsAll()
+//                .map { $0.items }
+//                .eraseToEffect()
 //            return newsRepository.fetchNewsAll()
 //                .map { Action.newNewsList($0.items) }
 //                .eraseToEffect()
