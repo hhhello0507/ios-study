@@ -5,7 +5,6 @@
 //  Created by dgsw8th71 on 2023/09/09.
 //
 
-import Foundation
 import Combine
 
 class NewsRemote: BaseRemote<NewsApi> {

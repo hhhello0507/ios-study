@@ -6,34 +6,18 @@
 //
 
 import Foundation
-import Moya
+//import Moya
 
 enum NewsApi {
     case newsList
 }
 
 extension NewsApi: Gong0Api {
-    var errorMap: [Int : ErrorType] {
-        return [200: .dum]
-    }
-    
-    typealias ErrorType = DummyError
-    
-    var domain: Gong0Domain {
-        return .news
-    }
 
     var urlPath: String {
         switch self {
         case .newsList:
             return "B551024/openArirangNewsApi/news"
-        }
-    }
-
-    var method: Moya.Method {
-        switch self {
-        case .newsList:
-            return .get
         }
     }
 
@@ -45,17 +29,6 @@ extension NewsApi: Gong0Api {
                 "pageNo":1,
                 "numOfRows":10
             ], encoding: URLEncoding.queryString)
-        }
-    }
-
-    var errorMapper: [Int: Gong0Error]? {
-        switch self {
-        case .newsList:
-            return [
-                400: .invalidInput,
-                401: .unauthorized,
-                500: .serverError
-            ]
         }
     }
 }
