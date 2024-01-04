@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import Alamofire
 
 @main
 struct swiftuitestApp: App {
+    
+    @State private var colorSet = ColorSet()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Text("Hello World")
+                .task {
+                    let response = AF.request("https://koreanjson.com/users")
+                        .responseJSON {
+                            print($0)
+                        }
+                }
         }
     }
 }
