@@ -12,5 +12,7 @@ let project = Project.makeModule(
     name: "ThirdPartyLib",
     product: .framework,
     packages: [],
-    dependencies: []
+    dependencies: [
+        .SPM.Alamofire
+    ]
 )

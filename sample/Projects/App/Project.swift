@@ -14,7 +14,7 @@ let project = Project.makeModule(
     platform: .iOS,
     product: .app,
     dependencies: [
-        .project(target: "Feature", path: .relativeToRoot("Projects/Feature"))
+        .Projcet.Feature
     ],
     resources: ["Resources/**"],
     infoPlist: .extendingDefault(with: [
