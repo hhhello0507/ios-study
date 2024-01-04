@@ -15,10 +15,15 @@ struct MyApp: App {
                                reducer: counterReducer,
                                environment: CounterEnvironment())
     
+    let memoStore = Store(initialState: MemoState(),
+                          reducer: memoReducer,
+                          environment: MemoEnvironment(memoClient: MemoClient.live,
+                                                       mainQueue: .main))
+    
     var body: some Scene {
         WindowGroup {
-            
-            CounterView(store: counterStore)
+            MemoView(store: memoStore)
+//            CounterView(store: counterStore)
         }
     }
 }
