@@ -35,6 +35,7 @@ let memoReducer = Reducer<MemoState, MemoAction, MemoEnvironment> { state, actio
             .debounce(id: ItemId.self,
                       for: 0.5,
                       scheduler: environment.mainQueue)
+            .mapError { _ in MemoClient.Failure() }
             .catchToEffect(MemoAction.itemsResponse)
     case .itemsResponse(.success(let memos)):
         state.isLoading = false
@@ -42,14 +43,13 @@ let memoReducer = Reducer<MemoState, MemoAction, MemoEnvironment> { state, actio
         return .none
     case .itemsResponse(.failure(let e)):
         state.isLoading = false
-        print(e)
         return .none
     }
 }
 
 struct MemoView: View {
     
-    let store: Store<MemoState, MemoAction>
+    var store: Store<MemoState, MemoAction>
     
     var body: some View {
         WithViewStore(self.store) { vs in
