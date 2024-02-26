@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D19AB2D2B8CDDE800DF27BB /* AlertTest.swift */; };
 		4D39B4BB2B3EB1F3001DBC24 /* swiftuitestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */; };
 		4D39B4BF2B3EB1F5001DBC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */; };
 		4D39B4C22B3EB1F5001DBC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4C12B3EB1F5001DBC24 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D19AB2D2B8CDDE800DF27BB /* AlertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
 		4D39B4B72B3EB1F3001DBC24 /* swiftuitest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuitest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuitestApp.swift; sourceTree = "<group>"; };
 		4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */,
 				4D39B4C02B3EB1F5001DBC24 /* Preview Content */,
 				4D6351752B46448C00EF1A96 /* ColorSet.swift */,
+				4D19AB2D2B8CDDE800DF27BB /* AlertTest.swift */,
 			);
 			path = swiftuitest;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				4D6351762B46448C00EF1A96 /* ColorSet.swift in Sources */,
 				4D39B4BB2B3EB1F3001DBC24 /* swiftuitestApp.swift in Sources */,
+				4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuitest/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuitest/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
