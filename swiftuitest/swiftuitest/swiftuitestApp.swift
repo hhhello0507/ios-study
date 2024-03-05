@@ -11,7 +11,7 @@ import Alamofire
 @main
 struct swiftuitestApp: App {
     
-    @State private var colorSet = ColorSet()
+//    @State private var colorSet = ColorSet()
     
     var body: some Scene {
 //        WindowGroup {
@@ -24,7 +24,8 @@ struct swiftuitestApp: App {
 //                }
 //        }
         WindowGroup {
-            AlertTest()
+            Onappear1Test()
+//            ContentView()
         }
     }
 }
