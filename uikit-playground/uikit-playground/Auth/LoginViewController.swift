@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     private let idTextField: UITextField = {
         let textField = UITextField()
