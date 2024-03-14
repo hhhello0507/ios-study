@@ -1,23 +1,27 @@
 import UIKit
+import SnapKit
 
 class ScrollTestVC: UIViewController {
     
     private var scrollView: UIScrollView = {
         let s = UIScrollView()
-        
+        s.translatesAutoresizingMaskIntoConstraints = false
         return s
     }()
     
     private var stack: UIStackView = {
         let s = UIStackView()
+        s.translatesAutoresizingMaskIntoConstraints = false
         s.axis = .vertical
+        s.distribution = .fill
+        s.spacing = 0
         return s
     }()
     
     private var labels: [UIView] = {
         (0..<100).map { _ in
             let l = UIView()
-            l.backgroundColor = .black
+            l.backgroundColor = .yellow
             l.translatesAutoresizingMaskIntoConstraints = false
             let a = UILabel()
             a.text = "HEllo"
@@ -33,29 +37,22 @@ class ScrollTestVC: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         stack.spacing = 0
         stack.translatesAutoresizingMaskIntoConstraints = false
-        
         scrollView.addSubview(stack)
         
         labels.forEach { l in
             stack.addArrangedSubview(l)
-            NSLayoutConstraint.activate([
-                l.heightAnchor.constraint(equalToConstant: 100)
-            ])
+            l.snp.makeConstraints { make in
+                make.height.equalTo(100)
+            }
         }
         
-        NSLayoutConstraint.activate([
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            // safeLayoutGuide로 잡으면 safelayout 바깥 쪽은 스크롤 X
-            scrollView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
-        ])
+        scrollView.snp.makeConstraints { make in
+            make.leading.trailing.equalTo(view)
+            make.top.bottom.equalTo(view.layoutMarginsGuide)
+        }
         
-        NSLayoutConstraint.activate([
-            stack.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
-            stack.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
-            stack.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
-            stack.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
-        ])
+        stack.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
 }
