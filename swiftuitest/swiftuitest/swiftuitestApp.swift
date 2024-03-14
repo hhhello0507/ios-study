@@ -24,7 +24,7 @@ struct swiftuitestApp: App {
 //                }
 //        }
         WindowGroup {
-            Onappear1Test()
+            BlurTestView()
 //            ContentView()
         }
     }

@@ -16,6 +16,7 @@
 		4D6351762B46448C00EF1A96 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6351752B46448C00EF1A96 /* ColorSet.swift */; };
 		4D7534142B9683E600E83FF9 /* HorizontalDropdownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */; };
 		4DEC89DE2B972967003A9403 /* OnappearTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC89DD2B972967003A9403 /* OnappearTest.swift */; };
+		4DF790D02BA16362008628BA /* BlurTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF790CF2BA16362008628BA /* BlurTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4D6351752B46448C00EF1A96 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDropdownTest.swift; sourceTree = "<group>"; };
 		4DEC89DD2B972967003A9403 /* OnappearTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnappearTest.swift; sourceTree = "<group>"; };
+		4DF790CF2BA16362008628BA /* BlurTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4D5F59092B8CEE4F006AE9E8 /* ButtonClickTest.swift */,
 				4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */,
 				4DEC89DD2B972967003A9403 /* OnappearTest.swift */,
+				4DF790CF2BA16362008628BA /* BlurTestView.swift */,
 			);
 			path = swiftuitest;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				4D7534142B9683E600E83FF9 /* HorizontalDropdownTest.swift in Sources */,
 				4DEC89DE2B972967003A9403 /* OnappearTest.swift in Sources */,
 				4D5F590A2B8CEE4F006AE9E8 /* ButtonClickTest.swift in Sources */,
+				4DF790D02BA16362008628BA /* BlurTestView.swift in Sources */,
 				4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

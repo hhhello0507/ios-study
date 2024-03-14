@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // 13이전의 경우에는 SceneDelegate에서 해주었던 작업을 그대로 진행해주면 된다.
         window = UIWindow()
-        window?.rootViewController = MainVC() // 초기 ViewController
+        window?.rootViewController = StackUIView() // 초기 ViewController
         window?.makeKeyAndVisible()
         return true
     }
