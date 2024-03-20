@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
     // Customize your cell's content here
@@ -22,12 +23,18 @@ class LazyHStackViewController: UIViewController, UICollectionViewDataSource, UI
     let cellIdentifier = "CustomCell"
     let itemCount = 20
     
+    private var scrollView = UIScrollView()
+    private var stack = UIStackView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        scrollView.delegate = self
+        stack.axis = .vertical
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
         // Create a layout
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         
         // Create a UICollectionView
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -36,15 +43,21 @@ class LazyHStackViewController: UIViewController, UICollectionViewDataSource, UI
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
-        view.addSubview(collectionView)
+        view.addSubview(scrollView)
+        scrollView.addSubview(stack)
+        stack.addArrangedSubview(collectionView)
         
-        // Add constraints
-        NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        scrollView.snp.makeConstraints {
+            $0.edges.equalTo(view.safeAreaLayoutGuide)
+        }
+        stack.snp.makeConstraints {
+            $0.edges.equalTo(scrollView.contentLayoutGuide)
+            $0.width.equalTo(scrollView.frameLayoutGuide)
+        }
+        
+        collectionView.snp.makeConstraints {
+            $0.edges.equalTo(view)
+        }
     }
     
     // MARK: - UICollectionViewDataSource
@@ -63,6 +76,6 @@ class LazyHStackViewController: UIViewController, UICollectionViewDataSource, UI
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: collectionView.bounds.height)
+        return CGSize(width: collectionView.bounds.width, height: 100)
     }
 }

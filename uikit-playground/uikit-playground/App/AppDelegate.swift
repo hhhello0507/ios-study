@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13.0, *) {
             return true
         }
-        // 13이전의 경우에는 SceneDelegate에서 해주었던 작업을 그대로 진행해주면 된다.
+        
         window = UIWindow()
         window?.rootViewController = StackUIView() // 초기 ViewController
         window?.makeKeyAndVisible()
@@ -34,6 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        // save
+        // background로 갈때
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // restore
+        // foreground로 올때
+    }
     
 }
 

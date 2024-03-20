@@ -20,6 +20,8 @@
 		4DA2EEB62B9FE94D0078CD6E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2EEB52B9FE94D0078CD6E /* ProfileVC.swift */; };
 		4DA2EEB82B9FE9650078CD6E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2EEB72B9FE9650078CD6E /* SearchVC.swift */; };
 		4DA2EEC82BA001590078CD6E /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2EEC72BA001590078CD6E /* BannerView.swift */; };
+		4DDD1ED82BA712A9003DA4AF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD1ED72BA712A9003DA4AF /* BaseViewController.swift */; };
+		4DDD1EDA2BA712F8003DA4AF /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD1ED92BA712F8003DA4AF /* BaseViewControllerProtocol.swift */; };
 		4DF790CC2BA13E50008628BA /* IPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF790CB2BA13E50008628BA /* IPageVC.swift */; };
 		4DF790DB2BA1B23D008628BA /* AnimatedSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF790DA2BA1B23D008628BA /* AnimatedSymbol.swift */; };
 		4DF790DD2BA1B252008628BA /* ExampleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF790DC2BA1B252008628BA /* ExampleType.swift */; };
@@ -56,6 +58,8 @@
 		4DA2EEB52B9FE94D0078CD6E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4DA2EEB72B9FE9650078CD6E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		4DA2EEC72BA001590078CD6E /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		4DDD1ED72BA712A9003DA4AF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4DDD1ED92BA712F8003DA4AF /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
 		4DF790CB2BA13E50008628BA /* IPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPageVC.swift; sourceTree = "<group>"; };
 		4DF790DA2BA1B23D008628BA /* AnimatedSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbol.swift; sourceTree = "<group>"; };
 		4DF790DC2BA1B252008628BA /* ExampleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleType.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		4D9C505D2B9F040A00BBF943 /* uikit-playground */ = {
 			isa = PBXGroup;
 			children = (
+				4DDD1ED62BA712A5003DA4AF /* Base */,
 				4DF790E52BA1C3E6008628BA /* CollectionView */,
 				4DF790D92BA1B22A008628BA /* Examples */,
 				4DF790CA2BA13E44008628BA /* Page */,
@@ -143,6 +148,15 @@
 				4D9C50602B9F040A00BBF943 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		4DDD1ED62BA712A5003DA4AF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD1ED72BA712A9003DA4AF /* BaseViewController.swift */,
+				4DDD1ED92BA712F8003DA4AF /* BaseViewControllerProtocol.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4DF790CA2BA13E44008628BA /* Page */ = {
@@ -254,6 +268,7 @@
 				4DF790EE2BA1E9FB008628BA /* ScrollTestVC.swift in Sources */,
 				4DA2EEB82B9FE9650078CD6E /* SearchVC.swift in Sources */,
 				4D9C50632B9F040A00BBF943 /* LoginViewController.swift in Sources */,
+				4DDD1ED82BA712A9003DA4AF /* BaseViewController.swift in Sources */,
 				4DF790DD2BA1B252008628BA /* ExampleType.swift in Sources */,
 				4DA2EEAE2B9FE5DD0078CD6E /* MainVC.swift in Sources */,
 				4DA2EEB62B9FE94D0078CD6E /* ProfileVC.swift in Sources */,
@@ -266,6 +281,7 @@
 				4DA2EEB42B9FE9090078CD6E /* HomeVC.swift in Sources */,
 				4D9C50612B9F040A00BBF943 /* SceneDelegate.swift in Sources */,
 				4DA2EE8C2B9FDD7F0078CD6E /* UITextField+.swift in Sources */,
+				4DDD1EDA2BA712F8003DA4AF /* BaseViewControllerProtocol.swift in Sources */,
 				4DF790DF2BA1B25C008628BA /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
