@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ButtonClickTest: View {
-    
     var callback: () -> Void
     
     var body: some View {

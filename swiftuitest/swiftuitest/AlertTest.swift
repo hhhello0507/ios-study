@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AlertTest: View {
-    
     @State var dialog = false
     @State var dialogType = Dialog.one
     

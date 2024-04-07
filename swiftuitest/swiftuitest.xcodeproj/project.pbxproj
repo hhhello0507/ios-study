@@ -11,10 +11,12 @@
 		4D39B4BB2B3EB1F3001DBC24 /* swiftuitestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */; };
 		4D39B4BF2B3EB1F5001DBC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */; };
 		4D39B4C22B3EB1F5001DBC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4C12B3EB1F5001DBC24 /* Preview Assets.xcassets */; };
+		4D50D0A52BAD829C002A6228 /* TextFieldTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50D0A42BAD829C002A6228 /* TextFieldTest.swift */; };
 		4D5F590A2B8CEE4F006AE9E8 /* ButtonClickTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F59092B8CEE4F006AE9E8 /* ButtonClickTest.swift */; };
 		4D63512B2B456FB200EF1A96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D63512A2B456FB200EF1A96 /* Alamofire */; };
 		4D6351762B46448C00EF1A96 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6351752B46448C00EF1A96 /* ColorSet.swift */; };
 		4D7534142B9683E600E83FF9 /* HorizontalDropdownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */; };
+		4DE9DA7D2BAEBF1E00785BB1 /* FocusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA7C2BAEBF1E00785BB1 /* FocusTest.swift */; };
 		4DEC89DE2B972967003A9403 /* OnappearTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC89DD2B972967003A9403 /* OnappearTest.swift */; };
 		4DF790D02BA16362008628BA /* BlurTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF790CF2BA16362008628BA /* BlurTestView.swift */; };
 /* End PBXBuildFile section */
@@ -25,9 +27,11 @@
 		4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuitestApp.swift; sourceTree = "<group>"; };
 		4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D39B4C12B3EB1F5001DBC24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D50D0A42BAD829C002A6228 /* TextFieldTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTest.swift; sourceTree = "<group>"; };
 		4D5F59092B8CEE4F006AE9E8 /* ButtonClickTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonClickTest.swift; sourceTree = "<group>"; };
 		4D6351752B46448C00EF1A96 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDropdownTest.swift; sourceTree = "<group>"; };
+		4DE9DA7C2BAEBF1E00785BB1 /* FocusTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTest.swift; sourceTree = "<group>"; };
 		4DEC89DD2B972967003A9403 /* OnappearTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnappearTest.swift; sourceTree = "<group>"; };
 		4DF790CF2BA16362008628BA /* BlurTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,8 @@
 				4D7534132B9683E600E83FF9 /* HorizontalDropdownTest.swift */,
 				4DEC89DD2B972967003A9403 /* OnappearTest.swift */,
 				4DF790CF2BA16362008628BA /* BlurTestView.swift */,
+				4D50D0A42BAD829C002A6228 /* TextFieldTest.swift */,
+				4DE9DA7C2BAEBF1E00785BB1 /* FocusTest.swift */,
 			);
 			path = swiftuitest;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 				4D39B4B32B3EB1F3001DBC24 /* Sources */,
 				4D39B4B42B3EB1F3001DBC24 /* Frameworks */,
 				4D39B4B52B3EB1F3001DBC24 /* Resources */,
+				4D2799EF2BAFCEDC00456948 /* SwiftLintScript */,
 			);
 			buildRules = (
 			);
@@ -155,6 +162,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D2799EF2BAFCEDC00456948 /* SwiftLintScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLintScript;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D39B4B32B3EB1F3001DBC24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -165,8 +194,10 @@
 				4D7534142B9683E600E83FF9 /* HorizontalDropdownTest.swift in Sources */,
 				4DEC89DE2B972967003A9403 /* OnappearTest.swift in Sources */,
 				4D5F590A2B8CEE4F006AE9E8 /* ButtonClickTest.swift in Sources */,
+				4DE9DA7D2BAEBF1E00785BB1 /* FocusTest.swift in Sources */,
 				4DF790D02BA16362008628BA /* BlurTestView.swift in Sources */,
 				4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */,
+				4D50D0A52BAD829C002A6228 /* TextFieldTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuitest/Preview Content\"";
 				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,6 +363,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuitest/Preview Content\"";
 				DEVELOPMENT_TEAM = B42SPPS3PR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

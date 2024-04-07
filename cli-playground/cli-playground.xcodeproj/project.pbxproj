@@ -11,9 +11,8 @@
 		4D38C7AF2BAA798000048A20 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7AE2BAA798000048A20 /* Moya */; };
 		4D38C7B12BAA798000048A20 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7B02BAA798000048A20 /* ReactiveMoya */; };
 		4D38C7B32BAA798000048A20 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7B22BAA798000048A20 /* RxMoya */; };
-		4D38C7B52BAA798E00048A20 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38C7B42BAA798E00048A20 /* UserApi.swift */; };
-		4D38C7B92BAA79E400048A20 /* UserTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38C7B82BAA79E400048A20 /* UserTarget.swift */; };
-		4D38C7BB2BAA892100048A20 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38C7BA2BAA892100048A20 /* SignUpRequest.swift */; };
+		4D3AC5B72BB19B31008331A7 /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */; };
+		4D3AC5B92BB19B87008331A7 /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AC5B82BB19B87008331A7 /* TestTarget.swift */; };
 		4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C507E2B9F4DFB00BBF943 /* main.swift */; };
 		4DA2EE872B9F506F0078CD6E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA2EE862B9F506F0078CD6E /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -31,9 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D38C7B42BAA798E00048A20 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
-		4D38C7B82BAA79E400048A20 /* UserTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTarget.swift; sourceTree = "<group>"; };
-		4D38C7BA2BAA892100048A20 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
+		4D3AC5B82BB19B87008331A7 /* TestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTarget.swift; sourceTree = "<group>"; };
 		4D9C507B2B9F4DFB00BBF943 /* cli-playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cli-playground"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9C507E2B9F4DFB00BBF943 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,22 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D38C7B62BAA79C600048A20 /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				4D38C7B42BAA798E00048A20 /* UserApi.swift */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		4D38C7B72BAA79D500048A20 /* Target */ = {
-			isa = PBXGroup;
-			children = (
-				4D38C7B82BAA79E400048A20 /* UserTarget.swift */,
-			);
-			path = Target;
-			sourceTree = "<group>";
-		};
 		4D9C50722B9F4DFB00BBF943 = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +71,9 @@
 		4D9C507D2B9F4DFB00BBF943 /* cli-playground */ = {
 			isa = PBXGroup;
 			children = (
-				4D38C7B72BAA79D500048A20 /* Target */,
-				4D38C7B62BAA79C600048A20 /* Api */,
 				4D9C507E2B9F4DFB00BBF943 /* main.swift */,
-				4D38C7BA2BAA892100048A20 /* SignUpRequest.swift */,
+				4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */,
+				4D3AC5B82BB19B87008331A7 /* TestTarget.swift */,
 			);
 			path = "cli-playground";
 			sourceTree = "<group>";
@@ -166,10 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D38C7B92BAA79E400048A20 /* UserTarget.swift in Sources */,
-				4D38C7BB2BAA892100048A20 /* SignUpRequest.swift in Sources */,
-				4D38C7B52BAA798E00048A20 /* UserApi.swift in Sources */,
 				4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */,
+				4D3AC5B92BB19B87008331A7 /* TestTarget.swift in Sources */,
+				4D3AC5B72BB19B31008331A7 /* AuthInterceptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
