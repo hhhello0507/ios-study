@@ -19,18 +19,7 @@ struct SwiftuitestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack(path: $views) {
-                Button {
-                    views.append(ViewType.A)
-                } label: {
-                    Text("Start")
-                }
-                .navigationDestination(for: ViewType.self) {
-                    switch $0 {
-                    case .A: A(path: $views)
-                    }
-                }
-            }
+            ChartView()
         }
     }
 }
@@ -40,7 +29,6 @@ enum ViewType2 {
 }
 
 struct A: View {
-    
     @Binding var path: NavigationPath
     
     var body: some View {
@@ -68,17 +56,13 @@ struct A: View {
     }
 }
 
-
 struct B: View {
-    
     var body: some View {
         Text("B")
     }
 }
 
-
 struct C: View {
-    
     var body: some View {
         Text("C")
     }

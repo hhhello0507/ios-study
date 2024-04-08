@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D19AB2D2B8CDDE800DF27BB /* AlertTest.swift */; };
+		4D2CBD0F2BC42177006BCEAB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2CBD0E2BC42177006BCEAB /* ChartView.swift */; };
 		4D39B4BB2B3EB1F3001DBC24 /* swiftuitestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */; };
 		4D39B4BF2B3EB1F5001DBC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */; };
 		4D39B4C22B3EB1F5001DBC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D39B4C12B3EB1F5001DBC24 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4D19AB2D2B8CDDE800DF27BB /* AlertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
+		4D2CBD0E2BC42177006BCEAB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		4D39B4B72B3EB1F3001DBC24 /* swiftuitest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuitest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D39B4BA2B3EB1F3001DBC24 /* swiftuitestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuitestApp.swift; sourceTree = "<group>"; };
 		4D39B4BE2B3EB1F5001DBC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4DF790CF2BA16362008628BA /* BlurTestView.swift */,
 				4D50D0A42BAD829C002A6228 /* TextFieldTest.swift */,
 				4DE9DA7C2BAEBF1E00785BB1 /* FocusTest.swift */,
+				4D2CBD0E2BC42177006BCEAB /* ChartView.swift */,
 			);
 			path = swiftuitest;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				4DE9DA7D2BAEBF1E00785BB1 /* FocusTest.swift in Sources */,
 				4DF790D02BA16362008628BA /* BlurTestView.swift in Sources */,
 				4D19AB2E2B8CDDE800DF27BB /* AlertTest.swift in Sources */,
+				4D2CBD0F2BC42177006BCEAB /* ChartView.swift in Sources */,
 				4D50D0A52BAD829C002A6228 /* TextFieldTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
