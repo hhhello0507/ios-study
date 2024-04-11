@@ -20,6 +20,7 @@ struct SwiftuitestApp: App {
     var body: some Scene {
         WindowGroup {
             ChartView()
+                .background(.white)
         }
     }
 }

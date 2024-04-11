@@ -18,6 +18,8 @@ let curColorBg = LinearGradient(
     endPoint: .bottom
 )
 
+let weekLst = ["7/3", "7/4", "7/5", "7/6", "7/7", "7/8", "7/9"]
+
 let cur1Color = Color(0xFF8125)
 let cur1ColorBg = LinearGradient(
     colors: [
@@ -56,7 +58,6 @@ struct ChartView: View {
                     .lineStyle(.init(lineWidth: 3, lineCap: .round, lineJoin: .round))
                     .interpolationMethod(.catmullRom)
                     .foregroundStyle(cur1Color)
-                    .foregroundStyle(by: .value("", "1"))
                     AreaMark(
                         x: .value("", i),
                         y: .value("", y)
@@ -64,15 +65,14 @@ struct ChartView: View {
                     .lineStyle(.init(lineWidth: 5, lineCap: .round, lineJoin: .round))
                     .interpolationMethod(.catmullRom)
                     .foregroundStyle(cur1ColorBg)
-                    .foregroundStyle(by: .value("", "1"))
                 }
                 .chartXAxis {
-                    AxisMarks(
-                        format: .number,
-                        values: [0, 1, 2, 3, 4, 5, 6]
-                    )
+                    AxisMarks { axis in
+                        let value = weekLst[axis.index]
+                        AxisValueLabel("\(value)", centered: false)
+                            .foregroundStyle(.black)
+                    }
                 }
-                .chartXAxis(.hidden)
                 .chartYAxis {
                     AxisMarks(
                         format: .number,
@@ -88,7 +88,6 @@ struct ChartView: View {
                     .lineStyle(.init(lineWidth: 3, lineCap: .round, lineJoin: .round))
                     .interpolationMethod(.catmullRom)
                     .foregroundStyle(curColor)
-                    .foregroundStyle(by: .value("", "1"))
                     AreaMark(
                         x: .value("", i),
                         y: .value("", y)
@@ -96,14 +95,14 @@ struct ChartView: View {
                     .lineStyle(.init(lineWidth: 5, lineCap: .round, lineJoin: .round))
                     .interpolationMethod(.catmullRom)
                     .foregroundStyle(curColorBg)
-                    .foregroundStyle(by: .value("", "1"))
                 }
-                .chartXAxis(.hidden)
+//                .chartXAxis(.hidden)
+                .chartLegend(.hidden)
                 .chartXAxis {
-                    AxisMarks(
-                        format: .number,
-                        values: [0, 1, 2, 3, 4, 5, 6]
-                    )
+                    AxisMarks { axis in
+                        let value = weekLst[axis.index]
+                        AxisValueLabel("\(value)", centered: false)
+                    }
                 }
                 .chartYAxis {
                     AxisMarks(
