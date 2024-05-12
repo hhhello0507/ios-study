@@ -37,10 +37,10 @@ class NewsFeature: BaseFeature, ReducerProtocol {
             state.isLoading = false
             return .none
         case .start:
-            return .none
-//            return .init(value: Action.newNewsList(newsRepository.fetchNewsAll()
-//                .map{ $0.items }
-//                .eraseToEffect()))
+//            return .none
+            return .init(value: Action.newNewsList(newsRepository.fetchNewsAll()
+                .map{ $0.items }
+                .eraseToEffect()))
 //            return Just(.start)
 //                .eraseToEffect()
 //            return newsRepository.fetchNewsAll()

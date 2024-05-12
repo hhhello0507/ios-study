@@ -19,7 +19,6 @@
 		4D33BA232AACD1B2002F14A6 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D33BA222AACD1B2002F14A6 /* Moya */; };
 		4D33BA252AACD1B2002F14A6 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D33BA242AACD1B2002F14A6 /* ReactiveMoya */; };
 		4D33BA272AACD1B2002F14A6 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D33BA262AACD1B2002F14A6 /* RxMoya */; };
-		4D33BA2A2AACD318002F14A6 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4D33BA292AACD318002F14A6 /* ComposableArchitecture */; };
 		4D5CFA4B2AAC073A001B8162 /* NewsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5CFA4A2AAC073A001B8162 /* NewsFeature.swift */; };
 		4D5CFA4E2AAC0829001B8162 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5CFA4D2AAC0829001B8162 /* NewsRepository.swift */; };
 		4DB057E82AA624E80026F1D8 /* i07_newwwsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB057E72AA624E80026F1D8 /* i07_newwwsApp.swift */; };
@@ -92,7 +91,6 @@
 			files = (
 				4D33BA272AACD1B2002F14A6 /* RxMoya in Frameworks */,
 				4DB058182AA8946B0026F1D8 /* Alamofire in Frameworks */,
-				4D33BA2A2AACD318002F14A6 /* ComposableArchitecture in Frameworks */,
 				4D33BA232AACD1B2002F14A6 /* Moya in Frameworks */,
 				4D33BA252AACD1B2002F14A6 /* ReactiveMoya in Frameworks */,
 				4D33BA212AACD1B2002F14A6 /* CombineMoya in Frameworks */,
@@ -323,7 +321,6 @@
 				4D33BA222AACD1B2002F14A6 /* Moya */,
 				4D33BA242AACD1B2002F14A6 /* ReactiveMoya */,
 				4D33BA262AACD1B2002F14A6 /* RxMoya */,
-				4D33BA292AACD318002F14A6 /* ComposableArchitecture */,
 			);
 			productName = i07_newwws;
 			productReference = 4DB057E42AA624E80026F1D8 /* i07_newwws.app */;
@@ -400,7 +397,6 @@
 			packageReferences = (
 				4DB058162AA8946B0026F1D8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4D33BA1F2AACD1B2002F14A6 /* XCRemoteSwiftPackageReference "Moya" */,
-				4D33BA282AACD318002F14A6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 4DB057E52AA624E80026F1D8 /* Products */;
 			projectDirPath = "";
@@ -792,14 +788,6 @@
 				minimumVersion = 15.0.0;
 			};
 		};
-		4D33BA282AACD318002F14A6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.59.0;
-			};
-		};
 		4DB058162AA8946B0026F1D8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -830,11 +818,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D33BA1F2AACD1B2002F14A6 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
-		};
-		4D33BA292AACD318002F14A6 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4D33BA282AACD318002F14A6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
 		};
 		4DB058172AA8946B0026F1D8 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

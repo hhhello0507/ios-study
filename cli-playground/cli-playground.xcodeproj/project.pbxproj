@@ -11,8 +11,12 @@
 		4D38C7AF2BAA798000048A20 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7AE2BAA798000048A20 /* Moya */; };
 		4D38C7B12BAA798000048A20 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7B02BAA798000048A20 /* ReactiveMoya */; };
 		4D38C7B32BAA798000048A20 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D38C7B22BAA798000048A20 /* RxMoya */; };
-		4D3AC5B72BB19B31008331A7 /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */; };
-		4D3AC5B92BB19B87008331A7 /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AC5B82BB19B87008331A7 /* TestTarget.swift */; };
+		4D501B9B2BF065B900F87846 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501B9A2BF065B900F87846 /* APIClient.swift */; };
+		4D501BA62BF094DD00F87846 /* APIAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BA52BF094DD00F87846 /* APIAgent.swift */; };
+		4D501BA92BF0957600F87846 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BA82BF0957600F87846 /* Result.swift */; };
+		4D501BAB2BF09A9300F87846 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BAA2BF09A9300F87846 /* Repository.swift */; };
+		4D501BAD2BF09DC200F87846 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BAC2BF09DC200F87846 /* ErrorResponse.swift */; };
+		4D501BB92BF0BB3C00F87846 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BB82BF0BB3C00F87846 /* HttpRequest.swift */; };
 		4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C507E2B9F4DFB00BBF943 /* main.swift */; };
 		4DA2EE872B9F506F0078CD6E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA2EE862B9F506F0078CD6E /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -30,8 +34,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
-		4D3AC5B82BB19B87008331A7 /* TestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTarget.swift; sourceTree = "<group>"; };
+		4D501B9A2BF065B900F87846 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4D501BA52BF094DD00F87846 /* APIAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAgent.swift; sourceTree = "<group>"; };
+		4D501BA82BF0957600F87846 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4D501BAA2BF09A9300F87846 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4D501BAC2BF09DC200F87846 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		4D501BB82BF0BB3C00F87846 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		4D9C507B2B9F4DFB00BBF943 /* cli-playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cli-playground"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9C507E2B9F4DFB00BBF943 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +60,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D501BA22BF0943F00F87846 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				4D501BA42BF094D200F87846 /* Foundation */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		4D501BA32BF0944600F87846 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D501BAA2BF09A9300F87846 /* Repository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4D501BA42BF094D200F87846 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4D501B9A2BF065B900F87846 /* APIClient.swift */,
+				4D501BA52BF094DD00F87846 /* APIAgent.swift */,
+				4D501BAC2BF09DC200F87846 /* ErrorResponse.swift */,
+				4D501BB82BF0BB3C00F87846 /* HttpRequest.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4D501BA72BF0957300F87846 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4D501BA82BF0957600F87846 /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4D501BB72BF0BB1C00F87846 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		4D9C50722B9F4DFB00BBF943 = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +121,11 @@
 		4D9C507D2B9F4DFB00BBF943 /* cli-playground */ = {
 			isa = PBXGroup;
 			children = (
+				4D501BB72BF0BB1C00F87846 /* Domain */,
+				4D501BA72BF0957300F87846 /* Common */,
+				4D501BA32BF0944600F87846 /* Data */,
+				4D501BA22BF0943F00F87846 /* Remote */,
 				4D9C507E2B9F4DFB00BBF943 /* main.swift */,
-				4D3AC5B62BB19B31008331A7 /* AuthInterceptor.swift */,
-				4D3AC5B82BB19B87008331A7 /* TestTarget.swift */,
 			);
 			path = "cli-playground";
 			sourceTree = "<group>";
@@ -147,9 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D501BA62BF094DD00F87846 /* APIAgent.swift in Sources */,
 				4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */,
-				4D3AC5B92BB19B87008331A7 /* TestTarget.swift in Sources */,
-				4D3AC5B72BB19B31008331A7 /* AuthInterceptor.swift in Sources */,
+				4D501BAB2BF09A9300F87846 /* Repository.swift in Sources */,
+				4D501BAD2BF09DC200F87846 /* ErrorResponse.swift in Sources */,
+				4D501BA92BF0957600F87846 /* Result.swift in Sources */,
+				4D501BB92BF0BB3C00F87846 /* HttpRequest.swift in Sources */,
+				4D501B9B2BF065B900F87846 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,14 +25,17 @@ struct SwiftuitestApp: App {
     var body: some Scene {
         WindowGroup {
             VStack {
-                HFlow(itemSpacing: 20, rowSpacing: 30) {
-                    ForEach(colors + colors, id: \.description) { color in
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(color.gradient)
-                            .frame(width: Double.random(in: 40...60), height: 50)
-                    }
-                }
+                SecureField("", text: .constant(""))
+                    .autocorrectionDisabled()
+//                HFlow(itemSpacing: 20, rowSpacing: 30) {
+//                    ForEach(colors + colors, id: \.description) { color in
+//                        RoundedRectangle(cornerRadius: 10)
+//                            .fill(color.gradient)
+//                            .frame(width: Double.random(in: 40...60), height: 50)
+//                    }
+//                }
             }
+            .background(.white)
         }
     }
 }
@@ -85,7 +88,6 @@ struct TextWrapper: UIViewRepresentable {
         textView.layoutIfNeeded()
     }
 }
-
 
 enum ViewType2 {
     case B, C

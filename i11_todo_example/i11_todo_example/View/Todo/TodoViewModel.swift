@@ -9,14 +9,14 @@ import Foundation
 
 class TodoViewModel: ObservableObject {
     @Published var dummyLst = [
-        TodoModel(id: 0, todo: "취업하기", createdAt: Date(), position: 2),
-        TodoModel(id: 1, todo: "돈벌기", createdAt: Date(), position: 0),
-        TodoModel(id: 2, todo: "놀기", createdAt: Date(), position: 1),
-        TodoModel(id: 3, todo: "공부하기", createdAt: Date(), position: 3)
+        Todo(id: 0, todo: "취업하기", createdAt: .now, position: 2),
+        Todo(id: 1, todo: "돈벌기", createdAt: .now, position: 0),
+        Todo(id: 2, todo: "놀기", createdAt: .now, position: 1),
+        Todo(id: 3, todo: "공부하기", createdAt: .now, position: 3)
     ]
     
     func createTodo() {
-        // ...
+        
     }
     
     func updateTodo() {
