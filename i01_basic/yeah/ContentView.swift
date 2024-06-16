@@ -53,14 +53,18 @@ struct NavigationTestView: View {
     }
 }
 
+class VM: ObservableObject {
+    @Published var isFlow = false
+}
+
 struct Nav1Screen: View {
     @State var text: String = ""
+    @StateObject var vm = VM()
     
     var body: some View {
         VStack {
             MyLabel(text: "TextField1")
             MyTextField(text: text, hint: "Enter anything")
-            
             MyLabel(text: "TextField2")
             MyTextField(text: text, hint: "Enter anything")
             
@@ -75,6 +79,14 @@ struct Nav1Screen: View {
             .foregroundColor(.white)
             .cornerRadius(5)
             Spacer()
+        }
+        .alert("", isPresented: $vm.isFlow) {
+            
+        } message: {
+            
+        }
+        .onChange(of: true) { _ in
+            
         }
     }
 }

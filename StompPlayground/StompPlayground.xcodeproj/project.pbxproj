@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CF76E603AC0322B7EE1157A /* Pods_StompPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DAE0CE322139E91A7D8DE9 /* Pods_StompPlayground.framework */; };
+		4D56130B2BFF3AE30062A8D1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D56130A2BFF3AE30062A8D1 /* Alamofire */; };
+		4D56130D2BFF3AE30062A8D1 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4D56130C2BFF3AE30062A8D1 /* AlamofireDynamic */; };
+		4D56130F2BFF3B860062A8D1 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D56130E2BFF3B860062A8D1 /* MessageResponse.swift */; };
+		4D5613122BFF3B980062A8D1 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5613112BFF3B980062A8D1 /* BaseResponse.swift */; };
+		4D5613152BFF404A0062A8D1 /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5613142BFF404A0062A8D1 /* SendMessageRequest.swift */; };
+		4D595FBC2BF61F9700EBB36A /* StompPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595FBB2BF61F9700EBB36A /* StompPlaygroundApp.swift */; };
+		4D595FBE2BF61F9700EBB36A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595FBD2BF61F9700EBB36A /* ContentView.swift */; };
+		4D595FC02BF61F9900EBB36A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D595FBF2BF61F9900EBB36A /* Assets.xcassets */; };
+		4D595FC32BF61F9900EBB36A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D595FC22BF61F9900EBB36A /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19547E3579CF0D20338B186D /* Pods-StompPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompPlayground.release.xcconfig"; path = "Target Support Files/Pods-StompPlayground/Pods-StompPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		4D31D0FE2BF628AB00B1F04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4D56130E2BFF3B860062A8D1 /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		4D5613112BFF3B980062A8D1 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		4D5613142BFF404A0062A8D1 /* SendMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageRequest.swift; sourceTree = "<group>"; };
+		4D595FB82BF61F9700EBB36A /* StompPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StompPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D595FBB2BF61F9700EBB36A /* StompPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StompPlaygroundApp.swift; sourceTree = "<group>"; };
+		4D595FBD2BF61F9700EBB36A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D595FBF2BF61F9900EBB36A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D595FC22BF61F9900EBB36A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FA09CEF93302F63137F0F8E /* Pods-StompPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompPlayground.debug.xcconfig"; path = "Target Support Files/Pods-StompPlayground/Pods-StompPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		88DAE0CE322139E91A7D8DE9 /* Pods_StompPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StompPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D595FB52BF61F9700EBB36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF76E603AC0322B7EE1157A /* Pods_StompPlayground.framework in Frameworks */,
+				4D56130D2BFF3AE30062A8D1 /* AlamofireDynamic in Frameworks */,
+				4D56130B2BFF3AE30062A8D1 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D5613102BFF3B930062A8D1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				4D56130E2BFF3B860062A8D1 /* MessageResponse.swift */,
+				4D5613112BFF3B980062A8D1 /* BaseResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		4D5613132BFF403E0062A8D1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4D5613142BFF404A0062A8D1 /* SendMessageRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		4D595FAF2BF61F9700EBB36A = {
+			isa = PBXGroup;
+			children = (
+				4D595FBA2BF61F9700EBB36A /* StompPlayground */,
+				4D595FB92BF61F9700EBB36A /* Products */,
+				9213B3585184FF49894EF916 /* Pods */,
+				A28787BD9E9A5B6A8851A3BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D595FB92BF61F9700EBB36A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D595FB82BF61F9700EBB36A /* StompPlayground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D595FBA2BF61F9700EBB36A /* StompPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				4D5613132BFF403E0062A8D1 /* Request */,
+				4D5613102BFF3B930062A8D1 /* Response */,
+				4D31D0FE2BF628AB00B1F04A /* Info.plist */,
+				4D595FBB2BF61F9700EBB36A /* StompPlaygroundApp.swift */,
+				4D595FBD2BF61F9700EBB36A /* ContentView.swift */,
+				4D595FBF2BF61F9900EBB36A /* Assets.xcassets */,
+				4D595FC12BF61F9900EBB36A /* Preview Content */,
+			);
+			path = StompPlayground;
+			sourceTree = "<group>";
+		};
+		4D595FC12BF61F9900EBB36A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4D595FC22BF61F9900EBB36A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9213B3585184FF49894EF916 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FA09CEF93302F63137F0F8E /* Pods-StompPlayground.debug.xcconfig */,
+				19547E3579CF0D20338B186D /* Pods-StompPlayground.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A28787BD9E9A5B6A8851A3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88DAE0CE322139E91A7D8DE9 /* Pods_StompPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D595FB72BF61F9700EBB36A /* StompPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D595FC62BF61F9900EBB36A /* Build configuration list for PBXNativeTarget "StompPlayground" */;
+			buildPhases = (
+				1C24092A04B9763688E56B7B /* [CP] Check Pods Manifest.lock */,
+				4D595FB42BF61F9700EBB36A /* Sources */,
+				4D595FB52BF61F9700EBB36A /* Frameworks */,
+				4D595FB62BF61F9700EBB36A /* Resources */,
+				54F59FA71AE24C01800F9C16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StompPlayground;
+			packageProductDependencies = (
+				4D56130A2BFF3AE30062A8D1 /* Alamofire */,
+				4D56130C2BFF3AE30062A8D1 /* AlamofireDynamic */,
+			);
+			productName = StompPlayground;
+			productReference = 4D595FB82BF61F9700EBB36A /* StompPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D595FB02BF61F9700EBB36A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4D595FB72BF61F9700EBB36A = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 4D595FB32BF61F9700EBB36A /* Build configuration list for PBXProject "StompPlayground" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D595FAF2BF61F9700EBB36A;
+			packageReferences = (
+				4D5613092BFF3AE30062A8D1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 4D595FB92BF61F9700EBB36A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D595FB72BF61F9700EBB36A /* StompPlayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D595FB62BF61F9700EBB36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D595FC32BF61F9900EBB36A /* Preview Assets.xcassets in Resources */,
+				4D595FC02BF61F9900EBB36A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C24092A04B9763688E56B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StompPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F59FA71AE24C01800F9C16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StompPlayground/Pods-StompPlayground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StompPlayground/Pods-StompPlayground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StompPlayground/Pods-StompPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D595FB42BF61F9700EBB36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5613152BFF404A0062A8D1 /* SendMessageRequest.swift in Sources */,
+				4D595FBE2BF61F9700EBB36A /* ContentView.swift in Sources */,
+				4D56130F2BFF3B860062A8D1 /* MessageResponse.swift in Sources */,
+				4D595FBC2BF61F9700EBB36A /* StompPlaygroundApp.swift in Sources */,
+				4D5613122BFF3B980062A8D1 /* BaseResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D595FC42BF61F9900EBB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D595FC52BF61F9900EBB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D595FC72BF61F9900EBB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA09CEF93302F63137F0F8E /* Pods-StompPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StompPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StompPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bestswlkh0310.StompPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D595FC82BF61F9900EBB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19547E3579CF0D20338B186D /* Pods-StompPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StompPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = B42SPPS3PR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StompPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bestswlkh0310.StompPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D595FB32BF61F9700EBB36A /* Build configuration list for PBXProject "StompPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D595FC42BF61F9900EBB36A /* Debug */,
+				4D595FC52BF61F9900EBB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D595FC62BF61F9900EBB36A /* Build configuration list for PBXNativeTarget "StompPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D595FC72BF61F9900EBB36A /* Debug */,
+				4D595FC82BF61F9900EBB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D5613092BFF3AE30062A8D1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D56130A2BFF3AE30062A8D1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D5613092BFF3AE30062A8D1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4D56130C2BFF3AE30062A8D1 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D5613092BFF3AE30062A8D1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4D595FB02BF61F9700EBB36A /* Project object */;
+}

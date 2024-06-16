@@ -47,20 +47,20 @@ public final class TodoViewModel: BaseViewModel {
     }
     
     func createTodo() {
-        todoRepository.createTodo(content: todo)
-            .sink { [self] result in
-                switch result {
-                case .success:
-                    fetchTodos()
-                    todo = ""
-                    fetchCreateTodo = .idle
-                case .failure:
-                    fetchTodosFailure = true
-                case .fetching:
-                    fetchCreateTodo = .fetching
-                }
-            }
-            .store(in: &subscriptions)
+//        todoRepository.createTodo(content: todo)
+//            .sink { [weak self] result in
+//                switch result {
+//                case .success:
+//                    self?.fetchTodos()
+//                    self?.todo = ""
+//                    self?.fetchCreateTodo = .idle
+//                case .failure:
+//                    self?.fetchTodosFailure = true
+//                case .fetching:
+//                    self?.fetchCreateTodo = .fetching
+//                }
+//            }
+//            .store(in: &subscriptions)
     }
     
     private func performSearch() {
@@ -69,4 +69,17 @@ public final class TodoViewModel: BaseViewModel {
         }
         filteredTodos = todos.filter { $0.content.contains(searchText) }
     }
+}
+
+
+public struct Base<Data: Decodable>: Decodable {
+    public let status: Int
+    public let success: Bool
+    public let state: String
+    public let message: String
+    public let data: Data
+}
+struct Token: Decodable {
+    let accessToken: String
+    let refreshToken: String
 }

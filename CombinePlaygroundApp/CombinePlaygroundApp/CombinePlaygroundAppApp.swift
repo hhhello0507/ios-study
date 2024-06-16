@@ -15,7 +15,7 @@ struct CombinePlaygroundAppApp: App {
                 TodoView(
                     viewModel: TodoViewModel(
                         todoRepository: TodoRepositoryImpl(
-                            todoService: TodoServiceImpl()
+                            todoService: MoyaTodoServiceImpl()
                         )
                     )
                 )

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0DF6592C1C82BF0077468F /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0DF6582C1C82BF0077468F /* CombineMoya */; };
+		4D0DF65B2C1C82BF0077468F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0DF65A2C1C82BF0077468F /* Moya */; };
+		4D0DF65D2C1C82BF0077468F /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0DF65C2C1C82BF0077468F /* ReactiveMoya */; };
+		4D0DF65F2C1C82BF0077468F /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0DF65E2C1C82BF0077468F /* RxMoya */; };
+		4D0DF6612C1C82D30077468F /* TodoTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DF6602C1C82D30077468F /* TodoTarget.swift */; };
+		4D0DF66E2C1D6EBC0077468F /* LoginReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DF66D2C1D6EBC0077468F /* LoginReq.swift */; };
 		4D501BC72BF0BBC500F87846 /* CombinePlaygroundAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BC62BF0BBC500F87846 /* CombinePlaygroundAppApp.swift */; };
 		4D501BC92BF0BBC500F87846 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BC82BF0BBC500F87846 /* TodoView.swift */; };
 		4D501BCB2BF0BBC800F87846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D501BCA2BF0BBC800F87846 /* Assets.xcassets */; };
@@ -31,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0DF6602C1C82D30077468F /* TodoTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTarget.swift; sourceTree = "<group>"; };
+		4D0DF66D2C1D6EBC0077468F /* LoginReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReq.swift; sourceTree = "<group>"; };
 		4D501BC32BF0BBC500F87846 /* CombinePlaygroundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePlaygroundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D501BC62BF0BBC500F87846 /* CombinePlaygroundAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePlaygroundAppApp.swift; sourceTree = "<group>"; };
 		4D501BC82BF0BBC500F87846 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
@@ -60,7 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0DF65F2C1C82BF0077468F /* RxMoya in Frameworks */,
+				4D0DF6592C1C82BF0077468F /* CombineMoya in Frameworks */,
+				4D0DF65D2C1C82BF0077468F /* ReactiveMoya in Frameworks */,
 				4D501BE62BF0BCB000F87846 /* Alamofire in Frameworks */,
+				4D0DF65B2C1C82BF0077468F /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +181,8 @@
 				4D501C002BF0C26400F87846 /* TodoResponse.swift */,
 				4D501C022BF0C28800F87846 /* TodoServiceImpl.swift */,
 				4D501C082BF0CE4300F87846 /* CreateTodoRequest.swift */,
+				4D0DF6602C1C82D30077468F /* TodoTarget.swift */,
+				4D0DF66D2C1D6EBC0077468F /* LoginReq.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -211,6 +225,10 @@
 			name = CombinePlaygroundApp;
 			packageProductDependencies = (
 				4D501BE52BF0BCB000F87846 /* Alamofire */,
+				4D0DF6582C1C82BF0077468F /* CombineMoya */,
+				4D0DF65A2C1C82BF0077468F /* Moya */,
+				4D0DF65C2C1C82BF0077468F /* ReactiveMoya */,
+				4D0DF65E2C1C82BF0077468F /* RxMoya */,
 			);
 			productName = CombinePlaygroundApp;
 			productReference = 4D501BC32BF0BBC500F87846 /* CombinePlaygroundApp.app */;
@@ -242,6 +260,7 @@
 			mainGroup = 4D501BBA2BF0BBC500F87846;
 			packageReferences = (
 				4D501BE42BF0BCB000F87846 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 4D501BC42BF0BBC500F87846 /* Products */;
 			projectDirPath = "";
@@ -279,9 +298,11 @@
 				4D501C012BF0C26400F87846 /* TodoResponse.swift in Sources */,
 				4D501BD92BF0BC2200F87846 /* TodoViewModel.swift in Sources */,
 				4D501BF22BF0BDB600F87846 /* BaseResponse.swift in Sources */,
+				4D0DF6612C1C82D30077468F /* TodoTarget.swift in Sources */,
 				4D501BF42BF0C00F00F87846 /* TodoDataSource.swift in Sources */,
 				4D501C032BF0C28800F87846 /* TodoServiceImpl.swift in Sources */,
 				4D501BF92BF0C03300F87846 /* Todo.swift in Sources */,
+				4D0DF66E2C1D6EBC0077468F /* LoginReq.swift in Sources */,
 				4D501BEC2BF0BCD000F87846 /* HttpRequest.swift in Sources */,
 				4D501BEE2BF0BCE600F87846 /* ErrorResponse.swift in Sources */,
 				4D501BFF2BF0C1AC00F87846 /* TodoRepositoryImpl.swift in Sources */,
@@ -496,6 +517,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 		4D501BE42BF0BCB000F87846 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -507,6 +536,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D0DF6582C1C82BF0077468F /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		4D0DF65A2C1C82BF0077468F /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		4D0DF65C2C1C82BF0077468F /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		4D0DF65E2C1C82BF0077468F /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0DF6572C1C82BF0077468F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
 		4D501BE52BF0BCB000F87846 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4D501BE42BF0BCB000F87846 /* XCRemoteSwiftPackageReference "Alamofire" */;

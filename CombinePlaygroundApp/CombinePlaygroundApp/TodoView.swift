@@ -12,7 +12,7 @@ public struct TodoView: View {
         let fetchCreateTodo = viewModel.fetchCreateTodo
         ZStack {
             Group {
-                switch (viewModel.todos) {
+                switch viewModel.todos {
                 case .success(let todos):
                     let todos = viewModel.searchText.isEmpty ? todos : viewModel.filteredTodos
                     List {

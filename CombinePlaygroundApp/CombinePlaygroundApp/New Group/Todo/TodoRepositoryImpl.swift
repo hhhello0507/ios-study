@@ -13,9 +13,4 @@ class TodoRepositoryImpl: TodoRepository {
             .map { $0.map { $0.toDomain() } }
             .asResult()
     }
-    
-    func createTodo(content: String) -> AnyPublisher<Result<Void>, Never> {
-        todoService.createTodo(content: content)
-            .asResult()
-    }
 }
