@@ -17,7 +17,8 @@
 		4D501BAB2BF09A9300F87846 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BAA2BF09A9300F87846 /* Repository.swift */; };
 		4D501BAD2BF09DC200F87846 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BAC2BF09DC200F87846 /* ErrorResponse.swift */; };
 		4D501BB92BF0BB3C00F87846 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D501BB82BF0BB3C00F87846 /* HttpRequest.swift */; };
-		4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C507E2B9F4DFB00BBF943 /* main.swift */; };
+		4D9C507F2B9F4DFB00BBF943 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C507E2B9F4DFB00BBF943 /* Combine.swift */; };
+		4DA234452C219E9A001D22E5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA234442C219E9A001D22E5 /* main.swift */; };
 		4DA2EE872B9F506F0078CD6E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA2EE862B9F506F0078CD6E /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,8 @@
 		4D501BAC2BF09DC200F87846 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		4D501BB82BF0BB3C00F87846 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		4D9C507B2B9F4DFB00BBF943 /* cli-playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cli-playground"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D9C507E2B9F4DFB00BBF943 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4D9C507E2B9F4DFB00BBF943 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
+		4DA234442C219E9A001D22E5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 				4D501BA72BF0957300F87846 /* Common */,
 				4D501BA32BF0944600F87846 /* Data */,
 				4D501BA22BF0943F00F87846 /* Remote */,
-				4D9C507E2B9F4DFB00BBF943 /* main.swift */,
+				4D9C507E2B9F4DFB00BBF943 /* Combine.swift */,
+				4DA234442C219E9A001D22E5 /* main.swift */,
 			);
 			path = "cli-playground";
 			sourceTree = "<group>";
@@ -200,7 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D501BA62BF094DD00F87846 /* APIAgent.swift in Sources */,
-				4D9C507F2B9F4DFB00BBF943 /* main.swift in Sources */,
+				4D9C507F2B9F4DFB00BBF943 /* Combine.swift in Sources */,
+				4DA234452C219E9A001D22E5 /* main.swift in Sources */,
 				4D501BAB2BF09A9300F87846 /* Repository.swift in Sources */,
 				4D501BAD2BF09DC200F87846 /* ErrorResponse.swift in Sources */,
 				4D501BA92BF0957600F87846 /* Result.swift in Sources */,

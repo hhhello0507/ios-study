@@ -1,10 +1,15 @@
 import Foundation
 import Combine
 import SwiftUI
+import Observation
 
 enum FetchCreateTodo {
     case idle
     case fetching
+}
+@Observable
+class VM {
+    
 }
 
 public final class TodoViewModel: BaseViewModel {
