@@ -9,15 +9,20 @@ struct SwiftuitestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            VStack {
-                GrowAvatar(type: .extraLarge)
-                Text("Hello World")
-                    .growColor(.textNormal)
-                Text("Hello World")
-                    .growColor(.textNormal)
-                    .growFont(.bodyM)
-            }
-            .environmentObject(ColorProvider(isDarkTheme: false))
+//            VStack {
+//                GrowAvatar(type: .extraLarge)
+//                Text("Hello World")
+//                    .growColor(.textNormal)
+//                Text("Hello World")
+//                    .growColor(.textNormal)
+//                    .growFont(.bodyM)
+//            }
+//            .environmentObject(ColorProvider(isDarkTheme: false))
+            UIAlertInSwiftUI()
         }
     }
+}
+
+#Preview {
+    DoubleTabTest()
 }
